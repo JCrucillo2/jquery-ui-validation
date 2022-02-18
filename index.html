@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Starter Kit SCSS</title>
+        <title>jQuery UI Validation</title>
 
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,23 +15,153 @@
         />
 
         <!-- stylesheets -->
+        <link
+            rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+        />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/styles.css" />
 
         <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
         <script src="./js/main.js" defer></script>
     </head>
     <body>
         <div class="container">
-            <header></header>
+            <header>
+                <h1>jQuery Basics</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+                </nav>
+            </header>
             <main>
-                <h1>Starter SASS Template</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis fugiat ipsa veritatis ducimus, maxime molestias
-                    quas minima recusandae, illum ipsum vitae odio perspiciatis
-                    quam aspernatur ex nulla repudiandae dicta? Necessitatibus.
-                </p>
+                <div class="main-page">
+                    <div class="main-content">
+                        <div id="accordion">
+                            <h3>jQuery Info</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A, eligendi explicabo. Soluta
+                                sit laudantium repellat quia porro dolore
+                                facilis fuga distinctio modi mollitia rerum
+                                earum, nulla quae eum, vero nam.
+                            </p>
+                            <h3>jQuery UI</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A, eligendi explicabo. Soluta
+                                sit laudantium repellat quia porro dolore
+                                facilis fuga distinctio modi mollitia rerum
+                                earum, nulla quae eum, vero nam.
+                            </p>
+                            <h3>AJAX</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. A, eligendi explicabo. Soluta
+                                sit laudantium repellat quia porro dolore
+                                facilis fuga distinctio modi mollitia rerum
+                                earum, nulla quae eum, vero nam.
+                            </p>
+                        </div>
+
+                        <div>
+                            <button id="use" class="btn-primary">
+                                Open Form
+                            </button>
+                            <div>
+                                <form
+                                    class="form-fillout"
+                                    id="form-area"
+                                    method="post"
+                                    action="success.html"
+                                >
+                                    <h2>Form Fillout</h2>
+                                    <div>
+                                        <label for="fullname">Full Name</label>
+                                        <input
+                                            type="text"
+                                            name="fullname"
+                                            id="fullname"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="email">Email</label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="url">URL</label>
+                                        <input
+                                            type="text"
+                                            name="url"
+                                            id="url"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="password">Password</label>
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            id="password"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="confirm_password"
+                                            >Confirm Password</label
+                                        >
+                                        <input
+                                            type="password"
+                                            name="confirm_password"
+                                            id="confirm_password"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="phone">Phone No.</label>
+                                        <input name="phone" id="phone" />
+                                    </div>
+                                    <input
+                                        class="btn-primary"
+                                        type="submit"
+                                        value="Submit"
+                                    />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar-item-1">
+                            <h3>SideBar Heading</h3>
+                            <p>Sub Heading</p>
+                            <ul>
+                                <li><a href="#">Link 1</a></li>
+                                |
+                                <li><a href="#">Link 2</a></li>
+                                |
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-item-2">
+                            <h3>SideBar Heading</h3>
+                            <p>Sub Heading</p>
+                            <ul>
+                                <li><a href="#"> Link 1</a></li>
+                                <li><a href="#"> Link 2</a></li>
+                                <li><a href="#"> Link 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </main>
             <footer></footer>
         </div>
